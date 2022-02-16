@@ -1,0 +1,18 @@
+{
+  "profiles": {
+    "weather/current-city": {
+      "version": "1.0.2",
+      "providers": {
+        "mock": {}
+      },
+      "priority": [
+        "mock"
+      ]
+    }
+  },
+  "providers": {
+    "mock": {
+      "security": []
+    }
+  }
+}
