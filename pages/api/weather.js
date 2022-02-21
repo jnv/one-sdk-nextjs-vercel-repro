@@ -1,8 +1,7 @@
-import { SuperfaceClient } from '@superfaceai/one-sdk';
+import sdk from '../../sdk';
 
 export default async function handler(req, res) {
   try {
-    const sdk = new SuperfaceClient();
     const profile = await sdk.getProfile('weather/current-city');
 
     const result = await profile.getUseCase('GetCurrentWeatherInCity').perform({
