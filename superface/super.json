@@ -11,14 +11,14 @@
       "file": "./test-profile.supr",
       "priority": ["mock"],
       "providers": {
-        "mock": {
+        "mymock": {
           "file": "./test-profile.mock.suma"
         }
       }
     }
   },
   "providers": {
-    "mock": {
+    "mymock": {
       "file": "./mock.provider.json",
       "security": []
     }

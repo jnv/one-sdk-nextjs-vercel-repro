@@ -1,5 +1,9 @@
 import { SuperfaceClient } from '@superfaceai/one-sdk';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
 import superJson from '../../superface/super.json';
+
+readFileSync(resolve(__dirname, '..', '..', 'superface', 'mock.provider.json'));
 
 export default async function handler(req, res) {
   try {
