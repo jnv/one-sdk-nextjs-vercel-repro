@@ -5,13 +5,21 @@
       "providers": {
         "mock": {}
       },
-      "priority": [
-        "mock"
-      ]
+      "priority": ["mock"]
+    },
+    "test-profile": {
+      "file": "./test-profile.supr",
+      "priority": ["mock"],
+      "providers": {
+        "mock": {
+          "file": "./test-profile.mock.suma"
+        }
+      }
     }
   },
   "providers": {
     "mock": {
+      "file": "./mock.provider.json",
       "security": []
     }
   }

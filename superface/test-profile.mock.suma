@@ -1,0 +1,11 @@
+profile = "test-profile@1.0"
+provider = "mock"
+
+"""
+TestProfile map
+"""
+map TestProfile {
+  map result {
+    foo = "bar"
+  }
+}

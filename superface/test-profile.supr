@@ -1,0 +1,14 @@
+name = "test-profile"
+version = "1.0.0"
+
+"""
+TestProfile usecase
+"""
+usecase TestProfile {
+  input {
+    foo string
+  }
+  result {
+    foo string
+  }
+}
