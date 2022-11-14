@@ -3,9 +3,11 @@ import fs from 'fs';
 import { resolve } from 'path';
 import superJson from '../../superface/super.json';
 
-try {
-  fs.readdir(resolve(__dirname, '..', '..', 'superface'));
-} catch (e) {}
+function noop() {
+  try {
+    fs.readdir(resolve(__dirname, '..', '..', 'superface'));
+  } catch (e) {}
+}
 
 export default async function handler(req, res) {
   try {
