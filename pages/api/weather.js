@@ -1,11 +1,11 @@
 import { SuperfaceClient } from '@superfaceai/one-sdk';
+import { resolve } from 'fs';
 import superJson from '../../superface/super.json';
 
 export default async function handler(req, res) {
   try {
     const sdk = new SuperfaceClient({
       superJson,
-      superfacePath,
     });
     const profile = await sdk.getProfile('weather/current-city');
 
@@ -23,12 +23,10 @@ export default async function handler(req, res) {
       }
     );
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        message: 'Caught exception outside of perform',
-        error,
-        errorMsg: error.message,
-      });
+    res.status(500).json({
+      message: 'Caught exception outside of perform',
+      error,
+      errorMsg: error.message,
+    });
   }
 }
