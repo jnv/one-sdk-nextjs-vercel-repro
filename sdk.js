@@ -18,7 +18,10 @@ function getSdk() {
   if (sdk) {
     return sdk;
   }
-  sdk = new SuperfaceClient({ superJson, superfacePath: SUPERFACE_PATH });
+  sdk = new SuperfaceClient({
+    superJson,
+    superfacePath: resolve(SUPERFACE_PATH, 'super.json'),
+  });
   return sdk;
 }
 
