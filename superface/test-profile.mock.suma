@@ -1,5 +1,5 @@
 profile = "test-profile@1.0"
-provider = "mock"
+provider = "mymock"
 
 """
 TestProfile map

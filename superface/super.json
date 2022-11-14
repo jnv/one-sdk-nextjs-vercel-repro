@@ -9,7 +9,7 @@
     },
     "test-profile": {
       "file": "./test-profile.supr",
-      "priority": ["mock"],
+      "priority": ["mymock"],
       "providers": {
         "mymock": {
           "file": "./test-profile.mock.suma"
